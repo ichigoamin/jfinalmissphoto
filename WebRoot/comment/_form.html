@@ -1,0 +1,20 @@
+<fieldset class="solid">
+	<legend>创建comment</legend>
+	
+	<input type="hidden" name="comment.cdid" value="${(comment.cdid)!}" />
+	
+	<div>
+		<label>评论人id</label>
+		<input type="text" name="comment.cuid" value="${(comment.cuid)!}" />${cuidMsg!}
+	</div>
+	
+	<div>
+		<label>评论内容</label>
+		<input type="text" name="comment.comment" value="${(comment.comment)!}" />${commentMsg!}
+	</div>
+	
+	<div>
+		<label>&nbsp;</label>
+		<input value="提交" type="submit">
+	</div>
+</fieldset>

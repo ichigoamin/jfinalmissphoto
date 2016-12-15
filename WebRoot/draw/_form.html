@@ -1,0 +1,23 @@
+<fieldset class="solid">
+	<legend>创建画作</legend>
+	<input type="hidden" name="draw.did" value="${(draw.did)!}" />
+	<div>
+		<label>点赞数</label>
+		<input type="text" name="draw.dlike" value="${(draw.dlike)!}" />${dlikeMsg!}
+	</div>
+	
+	<div>
+		<label>画作地址</label>
+		<input type="text" name="draw.durl" value="${(draw.durl)!}" />${durlMsg!}
+	</div>
+	
+	<div>
+		<label>作者id</label>
+		<input type="text" name="draw.udid" value="${(draw.udid)!}" />${udidMsg!}
+	</div>
+	
+	<div>
+		<label>&nbsp;</label>
+		<input value="提交" type="submit">
+	</div>
+</fieldset>

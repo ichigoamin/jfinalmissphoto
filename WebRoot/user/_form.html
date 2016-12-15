@@ -1,0 +1,30 @@
+<fieldset class="solid">
+	<legend>创建用户</legend>
+	<input type="hidden" name="user.uid" value="${(user.uid)!}" />
+	
+	<div>
+		<label>密码</label>
+		<input type="text" name="user.upwd" value="${(user.upwd)!}" />${upwdMsg!}
+	</div>
+	
+	
+	<div>
+		<label>昵称</label>
+		<input type="text" name="user.uname" value="${(user.uname)!}" />${unameMsg!}
+	</div>
+	
+	<div>
+		<label>账户</label>
+		<input type="text" name="user.uaccount" value="${(user.uaccount)!}" />${uaccountMsg!}
+	</div>
+	
+	<div>
+		<label>头像</label>
+		<input type="text" name="user.uimage" value="http://ww3.sinaimg.cn/mw690/6834371fjw1fan0mvculxj20rs0rsn27.jpg"/>${uimageMsg!}
+	</div>
+	
+	<div>
+		<label>&nbsp;</label>
+		<input value="提交" type="submit">
+	</div>
+</fieldset>

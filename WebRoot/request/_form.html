@@ -1,0 +1,28 @@
+<fieldset class="solid">
+	<legend>创建request</legend>
+	<input type="hidden" name="request.rid" value="${(request.rid)!}" />
+	
+	<div>
+		<label>需求标题</label>
+		<input type="text" name="request.rtitle" value="${(request.rtitle)!}" />${rtitleMsg!}
+	</div>
+	
+	<div>
+		<label>截止日期</label>
+		<input type="date" name="request.rdate" value="${(request.rdate)!}" />${rdateMsg!}
+	</div>
+	<div>
+		<label>详细需求</label>
+		<textarea name="request.rdetail" cols="80" rows="10">${(request.rdetail)!}</textarea>${rdetailMsg!}
+	</div>
+	
+	<div>
+		<label>需求用户编号</label>
+		<input type="text" name="request.ruid" value="${(request.ruid)!}" />${ruidMsg!}
+	</div>
+	
+	<div>
+		<label>&nbsp;</label>
+		<input value="提交" type="submit">
+	</div>
+</fieldset>
