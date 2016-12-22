@@ -13422,3 +13422,54 @@ java.lang.IllegalArgumentException: Not a directory: D:\android\jfinal_demo\WebR
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
 	at java.lang.Thread.run(Unknown Source)
+
+2016-12-21 18:47:19
+[ERROR]-[Thread: main]-[com.jfinal.kit.LogKit.error()]: port: 80 already in use!
+java.lang.IllegalStateException: port: 80 already in use!
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:79)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:65)
+	at com.jfinal.core.JFinal.start(JFinal.java:154)
+	at com.demo.common.config.DemoConfig.main(DemoConfig.java:86)
+
+2016-12-21 18:47:50
+[ERROR]-[Thread: main]-[com.jfinal.kit.LogKit.error()]: port: 80 already in use!
+java.lang.IllegalStateException: port: 80 already in use!
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:79)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:65)
+	at com.jfinal.core.JFinal.start(JFinal.java:154)
+	at com.demo.common.config.DemoConfig.main(DemoConfig.java:86)
+
+2016-12-22 10:12:37
+[WARN]-[Thread: Timer-0]-[com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run()]: com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@7117d900 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+
+2016-12-22 10:12:37
+[WARN]-[Thread: Timer-0]-[com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run()]: com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@7117d900 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f191fb9 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@9e35018 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5ec2dc26 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4634e3c9
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@117c861
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@12e73bcb
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5a8ce65d
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3bc77c6e
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@42cffb7
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2fbea59a
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
